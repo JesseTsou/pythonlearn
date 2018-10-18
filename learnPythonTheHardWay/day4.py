@@ -98,3 +98,13 @@ print("input the filename again:")
 file_again = input(">>")
 txt_again = open(file_again)
 print(txt_again.read())
+
+#打卡
+#编写一个程序，该程序可以从命令行接收一个数字输入并判断该数字是否为素数。
+num = int(input("请输入一个数字："))
+for i in range(2,num):
+    if num % i == 0:
+        print("%d 不是一个素数" % num)
+        break
+else:
+    print("%d 是一个素数" % num)
